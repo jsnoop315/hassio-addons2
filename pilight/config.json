@@ -12,6 +12,7 @@
   "gpio": "true",
   "apparmor": "false",
   "devices": ["/dev/mem:/dev/mem:rwm"],
+  "full_access": true,
   "options": {
     "gpio_platform": "raspberrypi3",
     "hardware": {
