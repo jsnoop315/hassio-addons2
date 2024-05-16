@@ -3,7 +3,6 @@
   "version": "1.7.2",
   "slug": "pilight",
   "description": "Run a Pilight Server on your Home Assistant",
-  "url": "https://github.com/philipp-luettecke/hassio-addons/tree/main/pilight",
   "arch": ["armhf", "armv7"],
   "startup": "services",
   "boot": "auto",
@@ -11,7 +10,7 @@
   "webui": "http://[HOST]:[PORT:5001]",
   "gpio": "true",
   "apparmor": "false",
-  "devices": ["/dev/mem:/dev/mem:rwm"],
+  "devices": ["/dev/mem:/dev/mem:rw"],
   "full_access": true,
   "options": {
     "gpio_platform": "raspberrypi3",
@@ -30,7 +29,7 @@
     "debug": "bool?"
   },
   "ports": {
-    "5000/tcp": 5010,
+    "5000/tcp": 5003,
     "5001/tcp": 5011
   },
   "ports_description": {
